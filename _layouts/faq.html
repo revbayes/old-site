@@ -1,0 +1,11 @@
+---
+layout: article
+---
+  <div id="article">
+   <div class="article-title">FAQ</div>
+   <div class="post">
+        {% capture faq %}{% include faq.md %}{% endcapture %}
+        {{ faq | markdownify }}
+   </div>
+ </div>
+    </div>
