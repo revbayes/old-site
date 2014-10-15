@@ -1,10 +1,7 @@
 name: Herring Cove
 author: Herring Cove
 markdown: redcarpet
-#markdown: kramdown
-#markdown: maruku
-#markdown: rdiscount
-#pygments: true
+pygments: true
 baseurl: /herring-cove
 description: theme for jekyll
 github: http://www.github.com/arnp
@@ -13,6 +10,7 @@ facebook: http://www.facebook.com
 linkedin: http://www.linkedin.com
 email: rnpatel[at]me.com
 location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
 
 ##Make sure to edit the above fields, especially for disqus.
 
