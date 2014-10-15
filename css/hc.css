@@ -6,14 +6,14 @@ body
   color:#2c3e50;
   background-color:#f0f0f0;
   width:100%;
-  border-top:solid #d90006;
+  border-top:solid #fbb662;
   border-width:4px
 }
 
 h1,h2,h3,h4,h5,h6
 {
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  color:#d90006
+  color:#fbb662
 }
 
 h1
@@ -98,7 +98,7 @@ p
   overflow-y:auto;
   z-index:1000;
   margin-top:-4px;
-  border-top:solid #d90006;
+  border-top:solid #fbb662;
   transition:all .4s ease 0;
   border-width:4px
 }
@@ -157,7 +157,7 @@ p
 
 .nav-toggle {
     display: none;
-    color: #d90006;
+    color: #fbb662;
     padding-left: 10px;
     padding-top: 10px;
   }
@@ -173,7 +173,7 @@ p
 
 .brand:hover
 {
-  color:#d90006;
+  color:#fbb662;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -207,8 +207,8 @@ p
 
 blockquote
 {
-  border-left:2px solid #d90006;
-  border-right:2px solid #d90006;
+  border-left:2px solid #fbb662;
+  border-right:2px solid #fbb662;
   margin-left:-40px;
   margin-right:-40px;
   padding-left:40px;
@@ -293,7 +293,7 @@ pre
 {
   font-size:3em;
   font-weight:700;
-  color:#d90006;
+  color:#fbb662;
   line-height:130%
 }
 
@@ -317,7 +317,7 @@ pre
 #welcome-greeting h2 a
 {
   font-weight:100;
-  color:#d90006
+  color:#fbb662
 }
 
 .credit
@@ -371,7 +371,7 @@ pre
 {
   font-size:35px;
   font-weight:700;
-  color:#d90006;
+  color:#fbb662;
   padding-top:15px
 }
 
@@ -553,7 +553,7 @@ time
   font-weight:bolder;
   font-size:2.5em;
   line-height:55px;
-  color:#d90006
+  color:#fbb662
 }
 
 .user-card p
@@ -578,22 +578,22 @@ time
 
 .fashion
 {
-  border-left:solid 2px #bc0005
+  border-left:solid 2px #fbb662
 }
 
 .fashion-button
 {
-  background-color:#bc0005
+  background-color:#fbb662
 }
 
 .fashion:hover
 {
-  border-left:solid 2px #f40006
+  border-left:solid 2px #FBD46E
 }
 
 .fashion-button:hover
 {
-  background-color:#f40006
+  background-color:#FBD46E
 }
 
 .programming
@@ -694,7 +694,7 @@ time
 }
 
 #sidebar-wrapper {
-    border-right: 4px solid #d90006;
+    border-right: 4px solid #fbb662;
     border-top: none;
     left: 0px;
 }
