@@ -1,16 +1,15 @@
-name: Herring Cove
-author: Herring Cove
+name: RevBayes
+author: RevBayes
 markdown: redcarpet
 pygments: true
-baseurl: http://revbayes.github.io/
+baseurl: http://revbayes.github.io
 description: theme for jekyll
-github: http://www.github.com/arnp
+github: http://www.github.com/revbayes
 twitter: http://www.twitter.com/
 facebook: http://www.facebook.com
 linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
-disqus: diqus-username
-
+email: revbayes[at]github.com
+#location: 42°2'16"N   70°12'47"W
+#disqus: diqus-username
 ##Make sure to edit the above fields, especially for disqus.
 
