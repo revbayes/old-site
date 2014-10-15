@@ -2,7 +2,7 @@ name: Herring Cove
 author: Herring Cove
 markdown: redcarpet
 pygments: true
-baseurl: /
+baseurl: http://revbayes.github.io/
 description: theme for jekyll
 github: http://www.github.com/arnp
 twitter: http://www.twitter.com/
