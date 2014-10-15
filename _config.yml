@@ -3,7 +3,7 @@ author: RevBayes
 markdown: redcarpet
 pygments: true
 baseurl: http://revbayes.github.io
-description: theme for jekyll
+description: Bayesian graphical models
 github: http://www.github.com/revbayes
 twitter: http://www.twitter.com/
 facebook: http://www.facebook.com
