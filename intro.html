@@ -13,62 +13,75 @@ layout: about
 				<div class="col-md-9">
 					<h1>A (very) short introduction to RevBayes</h1>
                     <p>
-                    
                     RevBayes provides an interactive environment for statistical computation in phylogenetics.
                     It is primarily intended for modeling, simulation, and Bayesian inference in evolutionary biology, particularly phylogenetics.
                     However, the environment is quite general and can be useful in any field dealing with complex stochastic models.
-                    <br>
+                    </p>
                     
+                    <p>
                     RevBayes uses its own language, Rev, which is similar to the language used in R.
                     Like the R language, Rev is designed to support interactive analysis.
                     Important differences include the support in Rev for object-oriented programing and for stepwise construction of complex models.
                     Rev supports both functional and procedural programming models, and make a clear distinction between the two.
                     It is also more strongly typed than R.
-                    <br>
+                    </p>
                     
+                    <p>
                     RevBayes uses graphical model concepts like BUGS, JAGS, STAN and related software.
                     It recognizes three different kinds of model variables: constant, deterministic, and stochastic.
                     Each kind of model variable is created through a particular type of assignment.
                     A constant variable is created through a left-arrow assignment:
+                    <br>
+                    <code>a <- 1.0</code>
+                    </p>
                     
-                    <code>a <- 1.0</code><br>
-                        
+                    <p>
                     A deterministic variable is created through an equation assignment using a colon and an equal sign:
-                        
-                    <code>b := exp( a )</code><br>
-                        
+                    <br>
+                    <code>b := exp( a )</code>
+                    </p>
+                    
+                    <p>
                     A deterministic variable differs from a constant variable in that its value changes dynamically when the values of the variables in its expression change.
                     Finally, a stochastic variable is created through a tilde assignment:
-                        
-                    <code>c ~ dnExp( b )</code><br>
-                        
+                    <br>
+                    <code>c ~ dnExp( b )</code>
+                    </p>
+                    
+                    <p>
                     In general, Rev provides distribution functions with the same name as in R.
                     For instance, 'rnorm' draws samples from the normal distribution, 'dnorm' calculates the density for a particular value, etc.
                     By just dropping the initial letter, you get the distribution name used in stochastic assignments, 'norm'.
                     Rev also supports canonical distribution names starting with 'dn' to better support tab completion. For the normal distribution, this form is 'dnNorm', which is a synonym of 'norm'.
-                    <br>
+                    <p>
+                    
+                    <p>
                     At any step in the model-building process, you can examine the model pieces in several different ways.
                     By just typing the name of the variable, you print its value.
                     The 'structure' or 'str' function prints detailed information on the structure of the variable.
                     Finally, the 'model' function creates a copy of the model graph and prints it so that you can examine it.
                     To see the value of a variable 'x', its structure, and the model it is connected to, use the following three statements,
-                        
+                    <br>
                     <code>x<br>
                         str(x)
                         model(x)
-                    </code></br>
-                        
+                    </code>
+                    <p>
+                    
+                    <p>
                     To list the workspace objects, use the 'ls()' function.
                     If you pass 'true' as an argument, 'ls(true)', the listing will include all global workspace objects in addition to the objects you have defined in your user workspace.
                     This will provide a complete listing of the available functions. You clear the user workspace using 'clear()', and read in Rev commands from a file using 'source("myfilename")'.
-                    <br>
+                    </p>
+                    
+                    <p>
                     Just typing a function name will result in printing of the call signature. If you precede the function name with a question mark, you will obtain the help for that function.
                     Try both with the normal distribution constructor using
+                    <br>
                     <code>
                         dnNorm<br>
                         ?dnNorm
-                    </code><br>
-                        
+                    </code>
                     </p>
 
                 </div>
