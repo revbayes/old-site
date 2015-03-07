@@ -1,0 +1,78 @@
+---
+layout: about
+---
+<div class="container">
+
+    <h1>Installing RevBayes from source on Mac OS X</h1>
+
+    <p>
+    1) Make sure that you have a c++ compiler installed on your computer. GCC 4.2 (or higher) and Apple LLVM version 6.0 have been used successfully.
+    If you don't have a c++ compiler, you can get it on a Mac when you download and install <a href="https://developer.apple.com/xcode/downloads/"><b>XCode</b>.
+    </p>    
+      
+    <p>
+    2) Make sure that you have <a href="http://www.cmake.org/"><b>CMake</b> installed. One option to install CMake is using homebrew:
+    <code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>
+    <br>
+    <code>brew install cmake</code>
+    </p>
+          
+                
+    <p>
+    3) Download RevBayes from our <a href="https://github.com/revbayes/revbayes"><b>github repository</b>. You can either clone the repository using git by running the following command in the terminal
+	<br>
+    <code>git clone https://github.com/revbayes/revbayes.git revbayes-master</code>
+    or you can download the zipped source code directly by clicking in the link somewhere on the right side. In this case you need to unzip the source files.
+    <br>
+    Remember where you downloaded the sources. You will need this directory later.
+    </p>
+    
+    <p>
+    4) Open a terminal and go to the RevBayes source directory if you haven't already done so, e.g.,
+	<br>
+    <code>cd revbayes-master</code>
+    Next, go into the projects and then the cmake subdirectory:
+    <br>
+    <code>cd projects/cmake</code>
+    Now you can either build the standard version, e.g., for older Mac OS or Linux distributions using
+    <br>
+    <code>./build.sh</code>
+    or you can build the newer Mac OS (since Maverick = Mac OS 10.9) using
+    <br>
+    <code>./build-mavericks.sh</code>
+    This builds the standard RevBayes executable <b>rb</b>. Alternatively, you can build the MPI version using instead the ...-MPI.sh build scripts which produces the <b>rb-mpi</b> executable.
+    </p>
+    
+    <p>
+    5) You should be ready to use RevBayes. We have listed below some potential issue to troubleshoot.
+	</p>
+	
+	
+	<h1>Troubleshooting:</h1>
+    <p>
+    1) Error cmake not found!
+	<br>
+	Please go to step 2.
+	</p>
+     
+    <p>
+    2) Error can't find the libboost_filesystem.dylib library or Library not loaded: libboost_filesystem.dylib 
+	<br>
+	The error you are getting can most likely be solved by the following steps (see also here: https://www.nescent.org/sites/academy/Software_Required).
+    You basically need to add the directory to the boost libraries to your <it>path variable</it>. You may find that you have to export this DYLD_LIBRARY_PATH every time you open a new terminal window. 
+    To get around this, you can add this to your .bash_profile. This file lives in your home directory. 
+    To change this, open a new terminal window and you should be in the home directory. Use the text editor nano to create this file type:
+    <br>
+    <code>cd ~</code>
+    <br>
+    <code>nano .bash_profile</code>
+    <br>
+    <code>export DYLD_LIBRARY_PATH=your_revbayes_source_directory/boost_1_55_0/stage/lib:$DYLD_LIBRARY_PATH
+    export PATH=your_revbayes_source_directory/projects/cmake:$PATH
+    </code>
+    This will open the nano editor and you can paste in the "export DYLD_LIBRARY_PATH" line above.  
+    Then save the file using ctl^o and hit return, then exit using ctl^x.
+    Now quit the Terminal app and reopen it and the boost libraries will forever be in your path. 
+    </p>
+
+</div>
