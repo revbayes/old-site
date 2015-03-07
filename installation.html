@@ -44,19 +44,19 @@ layout: about
     </p>
     
     <p>
-    5) You should be ready to use RevBayes. We have listed below some potential issue to troubleshoot.
+    5) You should be ready to use RevBayes. We have listed below some potential issue to troubleshoot below.
 	</p>
 	
 	
 	<h1>Troubleshooting:</h1>
     <p>
-    1) Error cmake not found!
+    1) <u>Error cmake not found!</u>
 	<br>
 	Please go to step 2.
 	</p>
      
     <p>
-    2) Error can't find the libboost_filesystem.dylib library or Library not loaded: libboost_filesystem.dylib 
+    2) <u>Error can't find the libboost_filesystem.dylib library or Library not loaded: libboost_filesystem.dylib</u>
 	<br>
 	The error you are getting can most likely be solved by the following steps (see also here: https://www.nescent.org/sites/academy/Software_Required).
     You basically need to add the directory to the boost libraries to your <it>path variable</it>. You may find that you have to export this DYLD_LIBRARY_PATH every time you open a new terminal window. 
@@ -72,6 +72,14 @@ layout: about
     This will open the nano editor and you can paste in the "export DYLD_LIBRARY_PATH" line above.  
     Then save the file using ctl^o and hit return, then exit using ctl^x.
     Now quit the Terminal app and reopen it and the boost libraries will forever be in your path. 
+    </p>
+    
+    <p>
+    2) <u>-bash: rb: command not found</u>
+	<br>
+	The problem is that you tried to run RevBayes but your computer doesn't know where the executable is.
+	The easiest way is to set add the directory in which you compiled RevBayes to your path variable.
+	You can do this by following exactly the instructions given for problem 2).
     </p>
 
 </div>
