@@ -21,7 +21,7 @@ layout: about
     <p>
     3) Download RevBayes from our <a href="https://github.com/revbayes/revbayes"><b>github repository</b></a>. You can either clone the repository using git by running the following command in the terminal
 	<br>
-    <code>git clone https://github.com/revbayes/revbayes.git revbayes-master</code>
+    <code>git clone https://github.com/revbayes/revbayes.git revbayes-master</code><br>
     or you can download the zipped source code directly by clicking in the link somewhere on the right side. In this case you need to unzip the source files.
     <br>
     Remember where you downloaded the sources. You will need this directory later.
@@ -30,16 +30,16 @@ layout: about
     <p>
     4) Open a terminal and go to the RevBayes source directory if you haven't already done so, e.g.,
 	<br>
-    <code>cd revbayes-master</code>
+    <code>cd revbayes-master</code><br>
     Next, go into the projects and then the cmake subdirectory:
     <br>
-    <code>cd projects/cmake</code>
+    <code>cd projects/cmake</code><br>
     Now you can either build the standard version, e.g., for older Mac OS or Linux distributions using
     <br>
-    <code>./build.sh</code>
+    <code>./build.sh</code><br>
     or you can build the newer Mac OS (since Maverick = Mac OS 10.9) using
     <br>
-    <code>./build-mavericks.sh</code>
+    <code>./build-mavericks.sh</code><br>
     This builds the standard RevBayes executable <b>rb</b>. Alternatively, you can build the MPI version using instead the ...-MPI.sh build scripts which produces the <b>rb-mpi</b> executable.
     </p>
     
@@ -63,14 +63,12 @@ layout: about
     To get around this, you can add this to your .bash_profile. This file lives in your home directory. 
     To change this, open a new terminal window and you should be in the home directory. Use the text editor nano to create this file type:
     <br>
-    <code>cd ~</code>
-    <br>
-    <code>nano .bash_profile</code>
-    <br>
+    <code>cd ~</code><br>
+    <code>nano .bash_profile</code><br>
     <code>export DYLD_LIBRARY_PATH=your_revbayes_source_directory/boost_1_55_0/stage/lib:$DYLD_LIBRARY_PATH
     <br>
     export PATH=your_revbayes_source_directory/projects/cmake:$PATH
-    </code>
+    </code><br>
     This will open the nano editor and you can paste in the "export DYLD_LIBRARY_PATH" line above.  
     Then save the file using ctl^o and hit return, then exit using ctl^x.
     Now quit the Terminal app and reopen it and the boost libraries will forever be in your path. 
