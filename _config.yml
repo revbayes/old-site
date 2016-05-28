@@ -1,7 +1,8 @@
 name: RevBayes
 author: RevBayes
 markdown: redcarpet
-pygments: true
+highlighter: rouge
+#pygments: true
 #baseurl: http://revbayes.github.io
 description: Bayesian graphical models
 github: http://www.github.com/revbayes
