@@ -1,6 +1,6 @@
 name: RevBayes
 author: RevBayes
-markdown: redcarpet
+#markdown: redcarpet
 highlighter: rouge
 #pygments: true
 #baseurl: http://revbayes.github.io
