@@ -212,7 +212,6 @@ textarea {
 }
 
 table {
-  color:green;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -276,7 +275,6 @@ table {
   }
   .table td,
   .table th {
-    color:green;
     background-color: #fff !important;
   }
   .btn > .caret,
@@ -1595,7 +1593,6 @@ table {
 }
 
 th {
-  color:green;
   text-align: left;
 }
 
@@ -1672,7 +1669,6 @@ th {
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-    color:green;
   background-color: #f5f5f5;
 }
 
