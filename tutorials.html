@@ -65,7 +65,27 @@ layout: links
 		<a name="source">
 		<h2>Tutorials</h2>
 		<table class="table table-hover ">
+		
+		
+			<thead>
+    			<tr>
+	        		<th id="PDF" scope="col">
+            			PDF
+		        	</th>
+    			    <th id="desc" scope="col">
+    		    	    <abbr title="Description">Descr</abbr>
+		    	    </th>
+    	    		<th id="data" scope="col">
+        		    	Data
+			        </th>
+		    	    <th id="villa" scope="col">
+        		    	Scripts
+	        		</th>
+    			</tr>
+			</thead>
+		
 			<tbody>
+			
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Manual.pdf"><b>Manual</b></a></span></p>
@@ -74,17 +94,14 @@ layout: links
 						<p class="p2"><span class="s1">The complete manual containing all tutorials.<span class="Apple-converted-space"> </span></span></p>
 					</td>
                 </tr>
-			</tbody>
-		</table>
-				
-		<h3>Introduction</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
-				<tr>
+                
+                
+			    <tr>
+        			<th id="intro" class="span" colspan="4" scope="colgroup">
+		        	    Introduction
+        			</th>
+			    </tr>
+			    <tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Getting_Started/RB_Getting_Started.pdf"><b>Getting Started</b></a></span></p>
 					</td>
@@ -111,7 +128,14 @@ layout: links
 					</td>
                 </tr>
                 
-				<tr>
+                
+                
+			    <tr>
+        			<th id="intro" class="span" colspan="4" scope="colgroup">
+		        	    Bayesian Inference and MCMC simulation
+        			</th>
+			    </tr>
+			    <tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_MCMC_Archery_Tutorial/RB_MCMC_Archery_Tutorial.pdf"><b>Tutorial</b></a></span></p>
 					</td>
@@ -123,9 +147,7 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_MCMC_Archery_Tutorial/scripts/archery_MH_moves.Rev"><b>Example script (Moves)</b></a></span></p>
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_MCMC_Archery_Tutorial/scripts/archery_RB.Rev"><b>Example script (RevBayes MCMC)</b></a></span></p>
 					</td>
-
                 </tr>
-                
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_MCMC_Binomial_Tutorial/RB_MCMC_Binomial_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -138,9 +160,7 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_MCMC_Binomial_Tutorial/scripts/Binomial_MH_algorithm_moves.Rev"><b>Example script (Moves)</b></a></span></p>
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_MCMC_Binomial_Tutorial/scripts/Binomial_MCMC.Rev"><b>Example script (RevBayes MCMC)</b></a></span></p>
 					</td>
-
                 </tr>
-
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_MCMC_Tutorial/RB_MCMC_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -149,44 +169,14 @@ layout: links
 						<p class="p2"><span class="s1">Running and diagnosing an MCMC analysis<span class="Apple-converted-space"> </span></span></p>
 					</td>
 				</tr>
-			</tbody>
-		</table>
                 
-		<h3>Basic phylogeny reconstruction and substitution models</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
                 
-        		<tr>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_CTMC_Tutorial/RB_CTMC_Tutorial.pdf"><b>Tutorial</b></a></span></p>
-					</td>
-					<td valign="top" class="td5">
-                        <p class="p2"><span class="s1">Models of molecular character evolution (substitution models).<span class="Apple-converted-space"> </span></span></p>
-					</td>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/data/primates_and_galeopterus_cytb.nex"><b>Primates data</b></a></span></p>
-					</td>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/scripts/mcmc_JC.Rev"><b>Example script (Jukes-Cantor)</b></a></span></p>
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/scripts/mcmc_GTR_Gamma_Inv.Rev"><b>Example script (GTR+Gamma+Inv)</b></a></span></p>
-					</td>
-				</tr>
-                                
-			</tbody>
-		</table>
                 
-		<h3>Model Selection and Model Fit</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
-				
+			    <tr>
+        			<th id="intro" class="span" colspan="4" scope="colgroup">
+		        	    Model Selection and Model Fit
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_BayesFactor_Tutorial/RB_BayesFactor_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -200,9 +190,7 @@ layout: links
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_BayesFactor_Tutorial/scripts/marginal_likelihood_JC.Rev"><b>Example script</b></a></span></p>
 					</td>
-
 				</tr>
-
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_PosteriorPrediction_Tutorial/RB_PosteriorPrediction_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -217,17 +205,29 @@ layout: links
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/blob/master/RB_PosteriorPrediction_Tutorial/scripts.zip?raw=true"><b>Example scripts</b></a></span></p>
 					</td>
                 </tr>
-			</tbody>
-		</table>
                 
-		<h3>More substitution models, data partitioning, and discrete morphology</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
-                                
+                
+                
+			    <tr>
+        			<th id="intro" class="span" colspan="4" scope="colgroup">
+		        	    Basic phylogeny reconstruction and substitution models
+        			</th>
+			    </tr>
+        		<tr>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_CTMC_Tutorial/RB_CTMC_Tutorial.pdf"><b>Tutorial</b></a></span></p>
+					</td>
+					<td valign="top" class="td5">
+                        <p class="p2"><span class="s1">Models of molecular character evolution (substitution models).<span class="Apple-converted-space"> </span></span></p>
+					</td>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/data/primates_and_galeopterus_cytb.nex"><b>Primates data</b></a></span></p>
+					</td>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/scripts/mcmc_JC.Rev"><b>Example script (Jukes-Cantor)</b></a></span></p>
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_CTMC_Tutorial/scripts/mcmc_GTR_Gamma_Inv.Rev"><b>Example script (GTR+Gamma+Inv)</b></a></span></p>
+					</td>
+				</tr>        
         		<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Partition_Tutorial/RB_Partition_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -246,39 +246,14 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Partition_Tutorial/scripts/ml_Partition_uniform.Rev"><b>Example script for marginal likelihood (uniform partition)</b></a></span></p>
 					</td>
 				</tr>
-				
-				
                 
-				<tr>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Discrete_Morphology_Tutorial/RB_DiscreteMorphology_Tutorial.pdf"><b>Tutorial</b></a></span></p>
-					</td>
-					<td valign="top" class="td5">
-                        <p class="p2"><span class="s1">Models of morphological character evolution (substitution models).<span class="Apple-converted-space"> </span></span></p>
-					</td>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/data.zip"><b>Bears data</b></a></span></p>
-					</td>
-					<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
-					</td>
-				<td valign="top" class="td4">
-						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/output_examples.zip"><b>Precooked Output</b></a></span></p>
-					</td
-                </tr>
                 
-			</tbody>
-		</table>
-        
                 
-		<h3>Divergence Time Estimation</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
-
+			    <tr>
+        			<th id="intro" class="span" colspan="4" scope="colgroup">
+		        	    Divergence Time Estimation
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DivergenceTime_Calibration_Tutorial/RB_DivergenceTime_Calibration_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -308,7 +283,6 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DivergenceTime_RelaxedClock_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
 					</td
                 </tr>
-                
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DivergenceTime_TipDating_Tutorial/RB_DivergenceTime_TipDating_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -323,7 +297,6 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DivergenceTime_TipDating_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
 					</td
                 </tr>
-
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Dating_Tutorial/RB_Dating_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -341,7 +314,6 @@ layout: links
                     </td>
                     -->
                 </tr>
-                
 				<tr>
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_TotalEvidenceDating_FBD_Tutorial/RB_TotalEvidenceDating_FBD_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -358,18 +330,15 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Dating_Tutorial/scripts/GlobalFixedClock.Rev"><b>Example fixed clock calibration script.</b></a></span></p>
                     </td>
                     -->
-                </tr>                
-			</tbody>
-        </table>
+                </tr>  
                 
-		<h3>Species tree estimation</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
                 
+                
+			    <tr>
+        			<th id="species_tree" class="span" colspan="4" scope="colgroup">
+		        	    Species tree estimation
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_GeneConcatenation_Tutorial/RB_GeneConcatenation_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -384,7 +353,6 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_GeneConcatenation_Tutorial/scripts/Concatenation_root_calibration.Rev"><b>Example script</b></a></span></p>
 					</td>
                 </tr>
-                
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_MultispeciesCoalescent_Tutorial/RB_MultispeciesCoalescent_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -399,17 +367,14 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_MultispeciesCoalescent_Tutorial/scripts/MultispeciesCoalescent_root_calibration.Rev"><b>Example script</b></a></span></p>
 					</td>
                 </tr>
-			</tbody>
-		</table>
-        
-        <h3>Diversification Rate Estimation</h3>
-        <table class="table table-hover ">
-            <col width="150">
-            <col width="400">
-            <col width="200">
-            <col width="200">
-            <tbody>
-                                
+                
+                
+                
+			    <tr>
+        			<th id="DivRates" class="span" colspan="4" scope="colgroup">
+		        	    Diversification Rate Estimation
+        			</th>
+			    </tr>
                 <tr>
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DiversificationRate_Tutorial/RB_DiversificationRate_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -423,9 +388,7 @@ layout: links
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DiversificationRate_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
                     </td>
-                </tr>
-                    
-                    
+                </tr>  
                 <tr>
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DiversificationRate_Episodic_Tutorial/RB_DiversificationRate_Episodic_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -439,9 +402,7 @@ layout: links
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DiversificationRate_Episodic_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
                     </td>
-                </tr>
-                    
-                    
+                </tr> 
                 <tr>
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DiversificationRate_Sampling_Tutorial/RB_DiversificationRate_Sampling_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -456,7 +417,6 @@ layout: links
                         <p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DiversificationRate_Sampling_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
                     </td>
                 </tr>
-                    
                 <tr>
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DiversificationRate_BranchSpecific_Tutorial/RB_DiversificationRate_BranchSpecific_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -471,7 +431,6 @@ layout: links
                         <p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_DiversificationRate_BranchSpecific_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
                     </td>
                 </tr>
-                    
                 <tr>
                     <td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_DiversificationRate_CharacterDependent_Tutorial/RB_DiversificationRate_CharacterDependent_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -487,18 +446,38 @@ layout: links
                     </td>
                 </tr>
                 
-            </tbody>
-        </table>
-        
                 
-		<h3>Biogeography</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
                 
+			    <tr>
+        			<th id="Morpho" class="span" colspan="4" scope="colgroup">
+		        	    Discrete morphology
+        			</th>
+			    </tr>
+				<tr>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Discrete_Morphology_Tutorial/RB_DiscreteMorphology_Tutorial.pdf"><b>Tutorial</b></a></span></p>
+					</td>
+					<td valign="top" class="td5">
+                        <p class="p2"><span class="s1">Models of morphological character evolution (substitution models).<span class="Apple-converted-space"> </span></span></p>
+					</td>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/data.zip"><b>Bears data</b></a></span></p>
+					</td>
+					<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/scripts.zip"><b>Example scripts.</b></a></span></p>
+					</td>
+				<td valign="top" class="td4">
+						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Discrete_Morphology_Tutorial/output_examples.zip"><b>Precooked Output</b></a></span></p>
+					</td
+                </tr>
+                
+                
+                
+			    <tr>
+        			<th id="biogeo" class="span" colspan="4" scope="colgroup">
+		        	    Biogeography
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Biogeography_Tutorial/RB_Biogeography_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -514,17 +493,14 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Biogeography_Tutorial/output_examples.zip"><b>Example output</b></a></span></p>
 					</td>
                 </tr>
-			</tbody>
-		</table>
-		
-        <h3>Chromosome Evolution</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
                 
+                
+                
+			    <tr>
+        			<th id="chromo" class="span" colspan="4" scope="colgroup">
+		        	    Chromosome Evolution
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Chromosome_Evolution_Tutorial/RB_Chromosome_Evolution_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -539,17 +515,14 @@ layout: links
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Chromosome_Evolution_Tutorial/scripts.zip"><b>Example scripts</b></a></span></p>
 					</td>
                 </tr>
-			</tbody>
-		</table>
                 
-		<h3>Continuous trait evolution</h3>
-		<table class="table table-hover ">
-			<col width="150">
-			<col width="400">
-			<col width="200">
-			<col width="200">
-			<tbody>
-
+                
+                
+			    <tr>
+        			<th id="cont" class="span" colspan="4" scope="colgroup">
+		        	    Continuous trait evolution
+        			</th>
+			    </tr>
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_PhyloComparative_Tutorial/RB_PhyloComparative_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -563,10 +536,7 @@ layout: links
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_PhyloComparative_BM_Tutorial/scripts/primatesMass_REML.Rev"><b>Example script</b></a></span></p>
 					</td>
-
                 </tr>
-
-
 				<tr>
 					<td valign="top" class="td4">
                         <p class="p2"><span class="s1"><a href="https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_PhyloComparativeAdvanced_Tutorial/RB_PhyloComparativeAdvanced_Tutorial.pdf"><b>Tutorial</b></a></span></p>
@@ -580,13 +550,12 @@ layout: links
 					<td valign="top" class="td4">
 						<p class="p2"><span class="s1"><a href="http://rawgit.com/revbayes/revbayes_tutorial/master/RB_PhyloComparative_OU_Tutorial/scripts.zip"><b>Example scripts</b></a></span></p>
 					</td>
-
                 </tr>
 
-
-
 			</tbody>
+			
 		</table>
+                
 	</div>
 </div>
  <!-- Bootstrap core JavaScript-->
