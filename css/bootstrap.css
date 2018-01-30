@@ -212,6 +212,7 @@ textarea {
 }
 
 table {
+  color:green;
   border-collapse: collapse;
   border-spacing: 0;
 }
